@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AzureFunctionsVersion>v3</AzureFunctionsVersion>
+    <RootNamespace>GEP.Data.Replication.AzureSql</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="GEP.Cumulus.Logging" Version="7.0.11" />
+    <PackageReference Include="GEP.SMART.Configuration" Version="7.0.8" />
+    <PackageReference Include="GEP.SMART.Storage.AzureSQL" Version="7.0.4" />
+    <PackageReference Include="GEP.SMART.Storage.AzureTable" Version="7.0.3" />
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="4.0.2" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>

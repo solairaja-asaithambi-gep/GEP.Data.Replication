@@ -1,0 +1,9 @@
+{
+  "version": "2.0",
+  "extensions": {
+    "queues": {
+      "batchSize": 1, //The number of queue messages that the Functions runtime retrieves simultaneously and processes in parallel
+      "maxDequeueCount": 3 //The number of times to try processing a message before moving it to the poison queue
+    }
+  }
+}
