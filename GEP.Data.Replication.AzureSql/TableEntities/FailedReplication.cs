@@ -10,5 +10,6 @@ namespace GEP.Data.Replication.AzureSql
         public int ToRegionId { get; set; }
         public string Action { get; set; }
         public string TableName { get; set; }
+        public string ErrorMessage { get; set; }
     }
 }
